@@ -5,7 +5,7 @@ import scrapy
 
 from scrape_allposts.config.blogs_config import blogs_config
 from scrape_allposts.helpers.ParseBlogs import ParseBlogs
-from scrapy_splash import SplashRequest
+from scrapy_splash import SplashRequest, SplashTextResponse
 from scrapy.http import HtmlResponse
 
 from scrape_allposts.pojos.Post import Post
@@ -21,6 +21,10 @@ class BlogsSpider(scrapy.Spider, ParseBlogs, ABC):
             lua_source = blog['lua_source']
             post = blog['post']
             site_name = blog['site_name']
+            enable = blog['enable']
+
+            if not enable:
+                continue
 
             wrapper = PostItem(text='', selector=post['wrapper'])
             title = PostItem(text='', selector=post['title'])
@@ -37,11 +41,12 @@ class BlogsSpider(scrapy.Spider, ParseBlogs, ABC):
 
     def parse(self, response, **kwargs):
         site_name = response.meta['site_name']
-        post = response.meta['post']
-        pages_response = response.data
+        post: Post = response.meta['post']
+        is_only_one_html = isinstance(response, SplashTextResponse)
+        pages_response = response if is_only_one_html else response.data
         filename = f'blogs-{site_name}.json'
 
-        if type(pages_response) is list:
+        if not is_only_one_html:
             list_elements = []
 
             for k, v in pages_response.items():
@@ -51,7 +56,8 @@ class BlogsSpider(scrapy.Spider, ParseBlogs, ABC):
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(list_elements, f)
         else:
-            list_elements_only = self.get_elements(pages_response, post)
+            response_casted = HtmlResponse(url='scrapied', body=pages_response.body, encoding='utf-8')
+            list_elements_only = self.get_elements(response_casted, post)
 
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(list_elements_only, f)
