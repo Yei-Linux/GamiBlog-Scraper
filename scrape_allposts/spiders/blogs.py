@@ -3,6 +3,7 @@ from abc import ABC
 
 import scrapy
 
+from scrape_allposts.config.blogs_config import blogs_config
 from scrape_allposts.helpers.ParseBlogs import ParseBlogs
 from scrapy_splash import SplashRequest
 from scrapy.http import HtmlResponse
@@ -13,62 +14,46 @@ from scrape_allposts.pojos.PostItem import PostItem
 
 class BlogsSpider(scrapy.Spider, ParseBlogs, ABC):
     name = 'blogs'
-    lua_source = """
-    function main(splash,args) 
-        local htmlsElements = {}
-        local numberPageElement
-        local nextNumerPageElement
-        splash:set_custom_headers({
-            ["Accept-Encoding"] = "deflate"
-        })
-        
-        assert(splash:go(args.url))
-        
-        for i=0,2,1
-        do
-            if (i ~= 0) 
-            then
-                numberPageElement = splash:select('.wp_page_numbers ul .active_page')    
-                nextNumerPageElement = numberPageElement.node.nextElementSibling
-                nextNumerPageElement:mouse_click()            
-            end
-            assert(splash:wait(10))
-            htmlsElements[i] = splash:html()
-        end
-        
-        return htmlsElements
-    end
-    """
 
     def start_requests(self):
-        urls = ['https://css-tricks.com/archives/']
+        for blog in blogs_config:
+            url = blog['url']
+            lua_source = blog['lua_source']
+            post = blog['post']
+            site_name = blog['site_name']
 
-        for url in urls:
+            wrapper = PostItem(text='', selector=post['wrapper'])
+            title = PostItem(text='', selector=post['title'])
+            link = PostItem(text='', selector=post['link'])
+            src = PostItem(text='', selector=post['src'])
+            description = PostItem(text='', selector=post['description'])
+            post_obj = Post(title=title, link=link, src=src, description=description, wrapper=wrapper)
+
             yield SplashRequest(url, self.parse, endpoint='execute', args={
                 'wait': 5,
-                'lua_source': self.lua_source,
+                'lua_source': lua_source,
                 'timeout': 120,
-            })
+            }, meta={'post': post_obj, 'site_name': site_name})
 
     def parse(self, response, **kwargs):
-        number = 1
-        filename = f'blogs-{number}.json'
+        site_name = response.meta['site_name']
+        post = response.meta['post']
         pages_response = response.data
+        filename = f'blogs-{site_name}.json'
 
-        wrapper = PostItem(text='', selector='article.article-card')
-        title = PostItem(text='', selector='div.article-article h2 a::text')
-        link = PostItem(text='', selector='div.article-article h2 a::attr(href)')
-        src = PostItem(text='', selector='div.article-thumbnail-wrap img::attr(src)')
-        description = PostItem(text='', selector='div.article-article div.card-content p')
-        post = Post(title=title, link=link, src=src, description=description, wrapper=wrapper)
+        if type(pages_response) is list:
+            list_elements = []
 
-        list = []
+            for k, v in pages_response.items():
+                response_casted = HtmlResponse(url='scrapied', body=v, encoding='utf-8')
+                list_elements = [*self.get_elements(response_casted, post), *list_elements]
 
-        for k, v in pages_response.items():
-            response_casted = HtmlResponse(url='scrapied', body=v, encoding='utf-8')
-            list = [*self.get_elements(response_casted, post), *list]
+            with open(filename, 'w', encoding='utf-8') as f:
+                json.dump(list_elements, f)
+        else:
+            list_elements_only = self.get_elements(pages_response, post)
 
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(list, f)
+            with open(filename, 'w', encoding='utf-8') as f:
+                json.dump(list_elements_only, f)
 
         self.log(f'Saved file as {filename}')
