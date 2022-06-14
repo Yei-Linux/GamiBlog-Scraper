@@ -1,24 +1,35 @@
 from typing import List, Dict
 
-from scrape_allposts.helpers.CleanerHelper import CleanerHelper
+from scrape_allposts.pojos.Post import Post
 
 
-class ParseBlogs(CleanerHelper):
+class ParseBlogs:
     def __int__(self):
         pass
 
-    def get_elements(self, response) -> List[Dict]:
+    def get_elements(self, response, post: Post) -> List[Dict]:
         list: List[Dict] = []
-        cards = response.css("article.article-card")
+        cards = response.css(post.wrapper.selector)
 
         for card in cards:
-            title: str = card.css("div.article-article h2 a::text").get()
-            link: str = card.css("div.article-article h2 a::attr(href)").get()
-            src: str = card.css("div.article-thumbnail-wrap img::attr(src)").get()
-            description = card.css("div.article-article div.card-content p").get()
+            title: str = card.css(post.title.selector).get()
+            link: str = card.css(post.link.selector).get()
+            src: str = card.css(post.src.selector).get()
+            description = card.css(post.description.selector).get()
 
-            clean_description = self.clean(self.clear_tags(description))
+            post.title.text = title
+            post.link.text = link
+            post.src.text = src
+            post.description.text = description
 
-            list.append({"title": self.clean(title), "src": self.clean(src), "link": self.clean(link), "description": clean_description})
+            post.title.clean()
+            post.link.clean()
+            post.src.clean()
+            post.description.clean_tags().clean()
+
+            list.append({"title": post.title.text,
+                         "src": post.src.text,
+                         "link": post.link.text,
+                         "description": post.description.text})
 
         return list

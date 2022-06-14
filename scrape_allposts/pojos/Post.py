@@ -1,14 +1,28 @@
-class Post:
-    _title: str
-    _link: str
-    _src: str
-    _description: str
+from scrape_allposts.pojos.PostItem import PostItem
 
-    def __int__(self, title, link, src, description):
+
+class Post:
+    _wrapper: PostItem
+
+    _title: PostItem
+    _link: PostItem
+    _src: PostItem
+    _description: PostItem
+
+    def __init__(self, title, link, src, description, wrapper):
         self._title = title
         self._link = link
         self._src = src
         self._description = description
+        self._wrapper = wrapper
+
+    @property
+    def wrapper(self):
+        return self._wrapper
+
+    @wrapper.setter
+    def wrapper(self, wrapper):
+        self._wrapper = wrapper
 
     @property
     def title(self):
@@ -36,8 +50,8 @@ class Post:
 
     @property
     def description(self):
-        return self.description
+        return self._description
 
     @description.setter
     def description(self, description):
-        self.description = description
+        self._description = description

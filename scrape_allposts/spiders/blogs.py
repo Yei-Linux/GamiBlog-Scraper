@@ -7,6 +7,9 @@ from scrape_allposts.helpers.ParseBlogs import ParseBlogs
 from scrapy_splash import SplashRequest
 from scrapy.http import HtmlResponse
 
+from scrape_allposts.pojos.Post import Post
+from scrape_allposts.pojos.PostItem import PostItem
+
 
 class BlogsSpider(scrapy.Spider, ParseBlogs, ABC):
     name = 'blogs'
@@ -51,11 +54,19 @@ class BlogsSpider(scrapy.Spider, ParseBlogs, ABC):
         number = 1
         filename = f'blogs-{number}.json'
         pages_response = response.data
+
+        wrapper = PostItem(text='', selector='article.article-card')
+        title = PostItem(text='', selector='div.article-article h2 a::text')
+        link = PostItem(text='', selector='div.article-article h2 a::attr(href)')
+        src = PostItem(text='', selector='div.article-thumbnail-wrap img::attr(src)')
+        description = PostItem(text='', selector='div.article-article div.card-content p')
+        post = Post(title=title, link=link, src=src, description=description, wrapper=wrapper)
+
         list = []
 
         for k, v in pages_response.items():
             response_casted = HtmlResponse(url='scrapied', body=v, encoding='utf-8')
-            list = [*self.get_elements(response_casted), *list]
+            list = [*self.get_elements(response_casted, post), *list]
 
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump(list, f)
