@@ -1,6 +1,6 @@
 blogs_config = [
     {
-        'enable': False,
+        'enable': True,
         'site_name': 'css-tricks',
         'url': 'https://css-tricks.com/archives/',
         'lua_source': """

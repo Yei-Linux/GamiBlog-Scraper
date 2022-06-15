@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "gamiblog-scraper",
+  "private_key_id": "d35a8a297cf47b2438faf491a2037192f139b8c2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCc/k777aJ4IaCg\nUD7AnHwyCTLQo/FFv5RmVZawhDDYp3UaQqm1TpFvmGO0SHz+R5Lc+c0TlV38rk0T\nNEtpJ59b80Rq+8+9KlX8QsQqt+kwMkLTrMT2QFi1Xq5J8UTSt1RDOyYOexvJVaRn\nvIzneAq55X0aXItBhuyDHf6nrRum4m3pAzH6Rr/YMZj0rTl/Ps/eDEYNYiTNZzSN\nxoCYSqT8Kzbx3oO8nctvhn25xxMSTtVKThDwG1/Qz1ZL492mOdNFQIYXAyctqmal\nP6uwDZwRSERoOPuLsEJfKegwmpSgOQF93eM/7xSq3NpHU1BFES7ctSmoGT0dSqKi\n0IIMN1XjAgMBAAECggEAIoEyUuSTxNt/NjzszeCW21hyNrERokbNEwDUsc8b/UIw\n1qi4LAUsqd5Qa5tS/YA1oyO0Ew3NLnAQuJvRxzbSK5939huKOQVJCLyT6N+q/NDP\nJz7du1HBLXu1ysKgYb+xYWVqo9wi60lLbRFf1q/ni5wItvaIFMrWyKqbAbdmUHMz\niB4HssHuLbNlwOoQmdgqisZD9pTe3YdooYmJRH55VayjiedLxu7fyctweptTWtjT\nIM4gKwfjpzm0yW+NdRtdkvDRs5GMu60B7xJkuLf+3i06N7SHD2B0OCbKJ4I5JZhm\n7M85oFFMknaYdED4e26D2R5Z9OgdOKScYYkGY+xooQKBgQDRVxFFpH+Yc016flLX\nqg0tSvC0L2T/MhBVTp3W13L4G8EVpmawJNLRB+sSf6Kpi5WmtdJzwyIwnm/L/H/h\nW5+FfK/aV3bci83lwuX6+duKyQwN90u1XPA4fR5X3m8zWtA44rGzFJS7Vkp7bLUe\nWIvjJACOQo8hSwelR0YIwwTXbwKBgQC//FdNgMJfxq9OzITeLFaYf51DS89o0QtD\nd/5QWvkgd/I/mwo+sCFOR9fOXPsAjopMMjZaiuJQ+xxuB/AOH6Yg4kH2GlhRgaBC\nrYYOEghqUi+xjgaIlWoq286GwP6CeVl9XrTstjalMGarJ8w/x5ItFm+X/1gqKxfj\n3mUm8f1OzQKBgQDM4ymdfu3/OMLZI/BS8jXpYZKK2GRCPS6tP7/OOZpl6Uwms3GH\n7tKDEfvqZA/BX0O+IfDzqkW5TihffyduWu2bibjXu4kzPIXt3b6X0JomkLWCqcpo\nnKjksNjU6Xjuy3BGbOG9Q2R6om9Ns8zlAYcQbfk5Qz2xOS0nf8W056LCcwKBgHXr\nyrviAIHPidI+sMW+OhpFGBVDtUvOSrrQMzasCiU1R2hmFG7YxDxOyHEKj2mSI8QV\ne2k1sTjIZHf5DCvAqMu97YH6QJEfq44JAzQVQ3H6tSy77atrCuD0TfBbDniZjKwC\nxeI3MW1ZQ1aRhVUPgeuLwlN8FW0hNvVRnpPDQzFpAoGBALFhM+hS9k/Y/iFhfX0z\nBBeTvTLlKaIoP1ifg0qmky/barUxd2aaXps0gvlPDQHxaAADsJ64wi5jyf/FlfyZ\nsvz4vsoIsV8LsHWpk1D4M44s8fGVjiVW+Q54rTd0ZVkqkJbOeSwMH3XIPUc12tUU\nezR0THAbyfvkiik2ytTJuKYA\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-j54fy@gamiblog-scraper.iam.gserviceaccount.com",
+  "client_id": "108634754822191630172",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-j54fy%40gamiblog-scraper.iam.gserviceaccount.com"
+}

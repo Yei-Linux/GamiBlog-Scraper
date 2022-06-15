@@ -1,302 +1,109 @@
-[
-    {
-        "title": "Top 7 Featured DEV Posts from the Past Week",
-        "src": "Top 7 Featured DEV Posts from the Past Week",
-        "link": "/devteam/top-7-featured-dev-posts-from-the-past-week-4ghj",
-        "description": "Top 7 Featured DEV Posts from the Past Week"
+{'dev-to_0': {'title': 'Top 7 Featured DEV Posts from the Past Week', 'src': 'Top 7 Featured DEV Posts from the Past Week', 'link': '/devteam/top-7-featured-dev-posts-from-the-past-week-4ghj', 'description':
+    'Top 7 Featured DEV Posts from the Past Week'
+    }, 'dev-to_1': {'title': "What's gotten better in programming languages", 'src': "What's gotten better in programming languages", 'link': '/adamgordonbell/whats-
+   gotten-better-in-programming-languages-50dh', 'description': "What's gotten better in programming languages"
+    }, 'dev-to_2': {'title': 'CI with SonarQube and Flutter - Part 1', 'src': 'CI with SonarQube and Fl
+   utter - Part 1', 'link': '/matteuus/ci-with-sonarqube-and-flutter-part-1-4hoi', 'description': 'CI with SonarQube and Flutter - Part 1'
+    }, 'dev-to_3': {'title': 'Setup asdf & direnv', 'src': 'Setup asdf & dir
+   env', 'link': '/deepanchal/setup-asdf-direnv-5afo', 'description': 'Setup asdf & direnv'
+    }, 'dev-to_4': {'title': 'Unix Domain Socket(IPC), how to make two programs communicate with each other', 'src': 'Unix 
+   Domain Socket(IPC), how to make two programs communicate with each other', 'link': '/____marcell/unix-domain-socketipc-how-to-make-two-programs-communicate-with-each-other-8l6', 'description': 'Unix Domain S
+   ocket(IPC), how to make two programs communicate with each other'
+    }, 'dev-to_5': {'title': 'Create fake blockchaine to test youre smart-contract', 'src': 'Create fake blockchaine to test youre smart-contract'
+   , 'link': '/mrhili/create-fake-blockchaine-to-test-youre-smart-contract-39ng', 'description': 'Create fake blockchaine to test youre smart-contract'
+    }, 'dev-to_6': {'title': 'Você conhece APL?', 'src': 'Você 
+   conhece APL?', 'link': '/feministech/voce-conhece-apl-24b6', 'description': 'Você conhece APL?'
+    }, 'dev-to_7': {'title': "Community Bonding Period GSoC'22", 'src': "Community Bonding Period GSoC'22", 'link': 
+   '/pulkit30/community-bonding-period-gsoc22-428o', 'description': "Community Bonding Period GSoC'22"
+    }, 'dev-to_8': {'title': 'Basics of AWS IAM: How to setup a Cloud Watch Trail in your organization?', 'src':
+    'Basics of AWS IAM: How to setup a Cloud Watch Trail in your organization?', 'link': '/aws-builders/basics-of-aws-iam-how-to-setup-a-cloud-watch-trail-in-your-organization-4jok', 'description': 'Basics of A
+   WS IAM: How to setup a Cloud Watch Trail in your organization?'
+    }, 'dev-to_9': {'title': 'A Step-By-Step Guide to Building an API in Django', 'src': 'A Step-By-Step Guide to Building an API in Django', 'link'
+   : '/wulfi/a-step-by-step-guide-to-building-an-api-in-django-9i0', 'description': 'A Step-By-Step Guide to Building an API in Django'
+    }, 'dev-to_10': {'title': 'Por que e como iniciar um App sem Storyboard?', 
+   'src': 'Por que e como iniciar um App sem Storyboard?', 'link': '/lucaslaacerda/por-que-e-como-iniciar-um-app-sem-storyboard-1c19', 'description': 'Por que e como iniciar um App sem Storyboard?'
+    }, 'dev-to_11
+   ': {'title': 'Working With Remix-Router In React JS - A Look at New Data APIs in DataBrowserRouter', 'src': 'Working With Remix-Router In React JS - A Look at New Data APIs in DataBrowserRouter', 'link': '/a
+   aronksaunders/working-with-remix-router-in-react-js-a-look-at-new-data-apis-in-databrowserrouter-1b0l', 'description': 'Working With Remix-Router In React JS - A Look at New Data APIs in DataBrowserRouter'
     },
-    {
-        "title": "Should I have separate GitHub accounts for personal and professional projects?",
-        "src": "Should I have separate GitHub accounts for personal and professional projects?",
-        "link": "/sloan/should-i-have-separate-github-accounts-for-personal-and-professional-projects-3icl",
-        "description": "Should I have separate GitHub accounts for personal and professional projects?"
-    },
-    {
-        "title": "What's gotten better in programming languages",
-        "src": "What's gotten better in programming languages",
-        "link": "/adamgordonbell/whats-gotten-better-in-programming-languages-50dh",
-        "description": "What's gotten better in programming languages"
-    },
-    {
-        "title": "Unix Domain Socket(IPC), how to make two programs communicate with each other",
-        "src": "Unix Domain Socket(IPC), how to make two programs communicate with each other",
-        "link": "/____marcell/unix-domain-socketipc-how-to-make-two-programs-communicate-with-each-other-8l6",
-        "description": "Unix Domain Socket(IPC), how to make two programs communicate with each other"
-    },
-    {
-        "title": "Working With Remix-Router In React JS - A Look at New Data APIs in DataBrowserRouter",
-        "src": "Working With Remix-Router In React JS - A Look at New Data APIs in DataBrowserRouter",
-        "link": "/aaronksaunders/working-with-remix-router-in-react-js-a-look-at-new-data-apis-in-databrowserrouter-1b0l",
-        "description": "Working With Remix-Router In React JS - A Look at New Data APIs in DataBrowserRouter"
-    },
-    {
-        "title": "A Step-By-Step Guide to Building an API in Django",
-        "src": "A Step-By-Step Guide to Building an API in Django",
-        "link": "/wulfi/a-step-by-step-guide-to-building-an-api-in-django-9i0",
-        "description": "A Step-By-Step Guide to Building an API in Django"
-    },
-    {
-        "title": "PyQGis",
-        "src": "PyQGis",
-        "link": "/unnotedme/pyqgis-3bni",
-        "description": "PyQGis"
-    },
-    {
-        "title": "Community Bonding Period GSoC'22",
-        "src": "Community Bonding Period GSoC'22",
-        "link": "/pulkit30/community-bonding-period-gsoc22-428o",
-        "description": "Community Bonding Period GSoC'22"
-    },
-    {
-        "title": "yet another fail",
-        "src": "yet another fail",
-        "link": "/marmeladze/mental-paralysis-in-an-interview-again-19h4",
-        "description": "yet another fail"
-    },
-    {
-        "title": "How many monitors do you use for coding?",
-        "src": "How many monitors do you use for coding?",
-        "link": "/bagya/developers-how-many-monitors-do-you-use-for-coding-54ag",
-        "description": "How many monitors do you use for coding?"
-    },
-    {
-        "title": "Scan to Cart QR Codes",
-        "src": "Scan to Cart QR Codes",
-        "link": "/birinderlobana/scan-to-cart-qr-codes-2gdc",
-        "description": "Scan to Cart QR Codes"
-    },
-    {
-        "title": "How to Create a Nuxt.js Ecommerce Storefront from Scratch Using Medusa Part 2: Adding Cart Functionality",
-        "src": "How to Create a Nuxt.js Ecommerce Storefront from Scratch Using Medusa Part 2: Adding Cart Functionality",
-        "link": "/medusajs/how-to-create-a-nuxtjs-ecommerce-storefront-from-scratch-using-medusa-part-2-adding-cart-functionality-9be",
-        "description": "How to Create a Nuxt.js Ecommerce Storefront from Scratch Using Medusa Part 2: Adding Cart Functionality"
-    },
-    {
-        "title": "Updating React App deployed on Firebase",
-        "src": "Updating React App deployed on Firebase",
-        "link": "/aniketkumarsinha/updating-react-app-deployed-on-firebase-kp2",
-        "description": "Updating React App deployed on Firebase"
-    },
-    {
-        "title": "Getting started with Python based IaC using AWS CDK",
-        "src": "Getting started with Python based IaC using AWS CDK",
-        "link": "/aws-builders/getting-started-with-python-based-iac-using-aws-cdk-152h",
-        "description": "Getting started with Python based IaC using AWS CDK"
-    },
-    {
-        "title": "Top 5 JavaScript Frameworks for Frontend in 2022",
-        "src": "Top 5 JavaScript Frameworks for Frontend in 2022",
-        "link": "/deepakydv9315/top-5-javascript-frameworks-for-frontend-in-2022-d6f",
-        "description": "Top 5 JavaScript Frameworks for Frontend in 2022"
-    },
-    {
-        "title": "Build on Flow ' Learn FCL - 7. How to Query Flow Account by Address",
-        "src": "Build on Flow ' Learn FCL - 7. How to Query Flow Account by Address",
-        "link": "/onflow/build-on-flow-learn-fcl-7-how-to-query-flow-account-by-address-439d",
-        "description": "Build on Flow ' Learn FCL - 7. How to Query Flow Account by Address"
-    },
-    {
-        "title": "Do You Create UML Diagrams For New Projects?",
-        "src": "Do You Create UML Diagrams For New Projects?",
-        "link": "/moose_said/do-you-create-uml-diagrams-for-new-projects-29a8",
-        "description": "Do You Create UML Diagrams For New Projects?"
-    },
-    {
-        "title": "CSS Grid: custom grid item placement - basics",
-        "src": "CSS Grid: custom grid item placement - basics",
-        "link": "/mateuszkirmuc/css-grid-custom-grid-item-placement-basics-ech",
-        "description": "CSS Grid: custom grid item placement - basics"
-    },
-    {
-        "title": "Let's Learn 11ty Part 6: Plugins",
-        "src": "Let's Learn 11ty Part 6: Plugins",
-        "link": "/psypher1/lets-learn-11ty-part-6-plugins-5ddb",
-        "description": "Let's Learn 11ty Part 6: Plugins"
-    },
-    {
-        "title": "Pure CSS The Professor (Money Heist)",
-        "src": "Pure CSS The Professor (Money Heist)",
-        "link": "/asyrafhussin4/pure-css-the-professor-3p80",
-        "description": "Pure CSS The Professor (Money Heist)"
-    },
-    {
-        "title": "Continuous Integration and Continuous Delivery",
-        "src": "Continuous Integration and Continuous Delivery",
-        "link": "/royce_reed/continuous-integration-and-continuous-delivery-ipc",
-        "description": "Continuous Integration and Continuous Delivery"
-    },
-    {
-        "title": "Run Apache APISIX on Microsoft Azure Container Instance",
-        "src": "Run Apache APISIX on Microsoft Azure Container Instance",
-        "link": "/apisix/run-apache-apisix-on-microsoft-azure-container-instance-1gdk",
-        "description": "Run Apache APISIX on Microsoft Azure Container Instance"
-    },
-    {
-        "title": "O que \u00e9 Cloud Computing?",
-        "src": "O que \u00e9 Cloud Computing?",
-        "link": "/feministech/o-que-e-cloud-computing-2nj2",
-        "description": "O que \u00e9 Cloud Computing?"
-    },
-    {
-        "title": "Internet Explorer retires\ud83d\udc74\ud83d\udc75",
-        "src": "Internet Explorer retires\ud83d\udc74\ud83d\udc75",
-        "link": "/adam_cyclones/internet-explorer-retires-4n34",
-        "description": "Internet Explorer retires\ud83d\udc74\ud83d\udc75"
-    },
-    {
-        "title": "Cross Module Transaction with Prisma",
-        "src": "Cross Module Transaction with Prisma",
-        "link": "/kenfdev/cross-module-transaction-with-prisma-5d08",
-        "description": "Cross Module Transaction with Prisma"
-    },
-    {
-        "title": "Common Ninja Platform News: Storage API ' Payment Trials ' Webhooks Management",
-        "src": "Common Ninja Platform News: Storage API ' Payment Trials ' Webhooks Management",
-        "link": "/commonninja/common-ninja-platform-news-storage-api-payment-trials-webhooks-management-4ob1",
-        "description": "Common Ninja Platform News: Storage API ' Payment Trials ' Webhooks Management"
-    },
-    {
-        "title": "How to Push an Empty Commit in Git",
-        "src": "How to Push an Empty Commit in Git",
-        "link": "/techielass/how-to-push-an-empty-commit-in-git-1i5m",
-        "description": "How to Push an Empty Commit in Git"
-    },
-    {
-        "title": "ASTs in Ruby - Pattern Matching",
-        "src": "ASTs in Ruby - Pattern Matching",
-        "link": "/baweaver/asts-in-ruby-pattern-matching-mjd",
-        "description": "ASTs in Ruby - Pattern Matching"
-    },
-    {
-        "title": "AWS Lambda 101: Shave That Bundle Down",
-        "src": "AWS Lambda 101: Shave That Bundle Down",
-        "link": "/kumo/aws-lambda-101-shave-that-bundle-down-48c7",
-        "description": "AWS Lambda 101: Shave That Bundle Down"
-    },
-    {
-        "title": "How to Reduce Time Spent on Refactoring? 3 Tips\u2705\u2705\u2705",
-        "src": "How to Reduce Time Spent on Refactoring? 3 Tips\u2705\u2705\u2705",
-        "link": "/alexomeyer/how-to-reduce-time-spent-on-refactoring-3-tips-5gmm",
-        "description": "How to Reduce Time Spent on Refactoring? 3 Tips\u2705\u2705\u2705"
-    },
-    {
-        "title": "Using Angular to create a Micro Frontend",
-        "src": "Using Angular to create a Micro Frontend",
-        "link": "/entando/using-angular-to-create-a-micro-frontend-5fci",
-        "description": "Using Angular to create a Micro Frontend"
-    },
-    {
-        "title": "20 chart.js Alternatives",
-        "src": "20 chart.js Alternatives",
-        "link": "/gil_finkelstein/20-chartjs-alternatives-45aj",
-        "description": "20 chart.js Alternatives"
-    },
-    {
-        "title": "AWS Textract and React Native",
-        "src": "AWS Textract and React Native",
-        "link": "/hadinasser24/aws-textract-and-react-native-m7j",
-        "description": "AWS Textract and React Native"
-    },
-    {
-        "title": "Responsiveness and Container-Queries",
-        "src": "Responsiveness and Container-Queries",
-        "link": "/abboud/responsiveness-and-container-queries-3l12",
-        "description": "Responsiveness and Container-Queries"
-    },
-    {
-        "title": "Node.js vs Rust performance for webservers",
-        "src": "Node.js vs Rust performance for webservers",
-        "link": "/gfauchart/nodejs-vs-rust-performance-for-webservers-3npg",
-        "description": "Node.js vs Rust performance for webservers"
-    },
-    {
-        "title": "How you can bypass the captcha?",
-        "src": "How you can bypass the captcha?",
-        "link": "/yourmdsarfaraj/how-you-can-bypass-the-captcha-l05",
-        "description": "How you can bypass the captcha?"
-    },
-    {
-        "title": "KNEX.JS SQL Query builder for Nodejs",
-        "src": "KNEX.JS SQL Query builder for Nodejs",
-        "link": "/taiworoqeeb/knexjs-sql-query-builder-for-nodejs-2728",
-        "description": "KNEX.JS SQL Query builder for Nodejs"
-    },
-    {
-        "title": "Optimizing Images for Web Performance with NGINX",
-        "src": "Optimizing Images for Web Performance with NGINX",
-        "link": "/requestmetrics/optimizing-images-for-web-performance-with-nginx-2ba",
-        "description": "Optimizing Images for Web Performance with NGINX"
-    },
-    {
-        "title": "Let's Make a Top-Down Shooter Game in C# and Windows Forms \ud83e\udd16",
-        "src": "Let's Make a Top-Down Shooter Game in C# and Windows Forms \ud83e\udd16",
-        "link": "/christinecdev/lets-make-a-top-down-shooter-game-in-c-and-windows-forms-1a4h",
-        "description": "Let's Make a Top-Down Shooter Game in C# and Windows Forms \ud83e\udd16"
-    },
-    {
-        "title": "Getting Started With Git & GitHub",
-        "src": "Getting Started With Git & GitHub",
-        "link": "/sakshishruti/getting-started-with-git-github-5bp0",
-        "description": "Getting Started With Git & GitHub"
-    },
-    {
-        "title": "Building a Flutter application for Web, iOS and Android using a CI/CD pipeline on CodeBuild \u2013 #cdk4j",
-        "src": "Building a Flutter application for Web, iOS and Android using a CI/CD pipeline on CodeBuild \u2013 #cdk4j",
-        "link": "/aws-builders/building-a-flutter-application-for-web-ios-and-android-using-a-cicd-pipeline-on-codebuild-cdk4j-10be",
-        "description": "Building a Flutter application for Web, iOS and Android using a CI/CD pipeline on CodeBuild \u2013 #cdk4j"
-    },
-    {
-        "title": "What's new in TypeScript 4.7",
-        "src": "What's new in TypeScript 4.7",
-        "link": "/logrocket/whats-new-in-typescript-47-24e3",
-        "description": "What's new in TypeScript 4.7"
-    },
-    {
-        "title": "Create interesting blob shapes with CSS",
-        "src": "Create interesting blob shapes with CSS",
-        "link": "/wenura/create-interesting-blob-shapes-with-css-cj",
-        "description": "Create interesting blob shapes with CSS"
-    },
-    {
-        "title": "Dependency injection without the decorators",
-        "src": "Dependency injection without the decorators",
-        "link": "/ivandotv/dependency-injection-without-the-decorators-3i2p",
-        "description": "Dependency injection without the decorators"
-    },
-    {
-        "title": "Building your next application using blockchain: Why and how",
-        "src": "Building your next application using blockchain: Why and how",
-        "link": "/theagilemonkeys/building-your-application-using-blockchain-why-and-how-3l2i",
-        "description": "Building your next application using blockchain: Why and how"
-    },
-    {
-        "title": "\ud83e\udd80 browser extension to explore rust cargo dependencies on GitHub repos",
-        "src": "\ud83e\udd80 browser extension to explore rust cargo dependencies on GitHub repos",
-        "link": "/hehehai/browser-extension-to-explore-rust-cargo-dependencies-on-github-repos-32h8",
-        "description": "\ud83e\udd80 browser extension to explore rust cargo dependencies on GitHub repos"
-    },
-    {
-        "title": "Allure Report Hands-on Guide",
-        "src": "Allure Report Hands-on Guide",
-        "link": "/ruslan_testops/allure-report-hands-on-guide-4m6m",
-        "description": "Allure Report Hands-on Guide"
-    },
-    {
-        "title": "Cloudflare DDNS on Linux",
-        "src": "Cloudflare DDNS on Linux",
-        "link": "/ordigital/cloudflare-ddns-on-linux-4p0d",
-        "description": "Cloudflare DDNS on Linux"
-    },
-    {
-        "title": "Easy migration to Ansible Vault id",
-        "src": "Easy migration to Ansible Vault id",
-        "link": "/alphab/easy-migration-to-ansible-vault-id-43ap",
-        "description": "Easy migration to Ansible Vault id"
-    },
-    {
-        "title": "Using NgRx Packages with Standalone Angular Features",
-        "src": "Using NgRx Packages with Standalone Angular Features",
-        "link": "/ngrx/using-ngrx-packages-with-standalone-angular-features-53d8",
-        "description": "Using NgRx Packages with Standalone Angular Features"
+    'dev-to_12': {'title': 'Five things I have learned being a jobless 27 year old', 'src': 'Five things I have learned being a jobless 27 year old', 'link': '/itschristinamba/five-things-i-have-learned-being-a
+   -jobless-27-year-old-4ke9', 'description': 'Five things I have learned being a jobless 27 year old'
+    }, 'dev-to_13': {'title': 'Scan to Cart QR Codes', 'src': 'Scan to Cart QR Codes', 'link': '/birinderlobana/
+   scan-to-cart-qr-codes-2gdc', 'description': 'Scan to Cart QR Codes'
+    }, 'dev-to_14': {'title': 'Getting started with Python based IaC using AWS CDK', 'src': 'Getting started with Python based IaC using AWS CDK
+   ', 'link': '/aws-builders/getting-started-with-python-based-iac-using-aws-cdk-152h', 'description': 'Getting started with Python based IaC using AWS CDK'
+    }, 'dev-to_15': {'title': 'How to Create a Nuxt.js Eco
+   mmerce Storefront from Scratch Using Medusa Part 2: Adding Cart Functionality', 'src': 'How to Create a Nuxt.js Ecommerce Storefront from Scratch Using Medusa Part 2: Adding Cart Functionality', 'link': '/me
+   dusajs/how-to-create-a-nuxtjs-ecommerce-storefront-from-scratch-using-medusa-part-2-adding-cart-functionality-9be', 'description': 'How to Create a Nuxt.js Ecommerce Storefront from Scratch Using Medusa Part
+    2: Adding Cart Functionality'
+    }, 'dev-to_16': {'title': 'Updating React App deployed on Firebase', 'src': 'Updating React App deployed on Firebase', 'link': '/aniketkumarsinha/updating-react-app-deployed-on-
+   firebase-kp2', 'description': 'Updating React App deployed on Firebase'
+    }, 'dev-to_17': {'title': 'Top Five WORST posts of the year', 'src': 'Top Five WORST posts of the year', 'link': '/ironcladdev/top-five-
+   worst-posts-of-the-year-1dhn', 'description': 'Top Five WORST posts of the year'
+    }, 'dev-to_18': {'title': 'Lazy Sequences in Elixir and Erlang', 'src': 'Lazy Sequences in Elixir and Erlang', 'link': '/savona
+   rola/lazy-sequences-in-elixir-and-erlang-3mne', 'description': 'Lazy Sequences in Elixir and Erlang'
+    }, 'dev-to_19': {'title': "Build on Flow ' Learn FCL - 7. How to Query Flow Account by Address", 'src': "Bu
+   ild on Flow ' Learn FCL - 7. How to Query Flow Account by Address", 'link': '/onflow/build-on-flow-learn-fcl-7-how-to-query-flow-account-by-address-439d', 'description': "Build on Flow ' Learn FCL - 7. How t
+   o Query Flow Account by Address"}, 'dev-to_20': {'title': "Let's Learn 11ty Part 6: Plugins", 'src': "Let's Learn 11ty Part 6: Plugins", 'link': '/psypher1/lets-learn-11ty-part-6-plugins-5ddb', 'description': "Let's Learn 11ty Part 6: Plugins"
+    }, 'dev-to_21': {'title': 'CSS Grid: custom grid item placement - basics', 'src': 'CSS Grid: custom grid item placement - basics', 'link': '/mateuszkirmuc/css-grid-custom-
+   grid-item-placement-basics-ech', 'description': 'CSS Grid: custom grid item placement - basics'
+    }, 'dev-to_22': {'title': 'Pure CSS The Professor (Money Heist)', 'src': 'Pure CSS The Professor (Money Heist)',
+    'link': '/asyrafhussin4/pure-css-the-professor-3p80', 'description': 'Pure CSS The Professor (Money Heist)'
+    }, 'dev-to_23': {'title': 'Instagram Advanced User Finder', 'src': 'Instagram Advanced User Finder'
+   , 'link': '/suphi/instagram-advanced-user-finder-2538', 'description': 'Instagram Advanced User Finder'
+    }, 'dev-to_24': {'title': 'PyQGis', 'src': 'PyQGis', 'link': '/unnotedme/pyqgis-3bni', 'description': 'P
+   yQGis'
+    }, 'dev-to_25': {'title': 'Continuous Integration and Continuous Delivery', 'src': 'Continuous Integration and Continuous Delivery', 'link': '/royce_reed/continuous-integration-and-continuous-delivery-
+   ipc', 'description': 'Continuous Integration and Continuous Delivery'
+    }, 'dev-to_26': {'title': 'CSS Variables with Global & Local Scope', 'src': 'CSS Variables with Global & Local Scope', 'link': '/swarnalir
+   oy94/css-variables-with-global-local-scope-4gbf', 'description': 'CSS Variables with Global & Local Scope'
+    }, 'dev-to_27': {'title': 'Setting Up Your First WebGL Project With CurtainsJS - Four Part Setup', 's
+   rc': 'Setting Up Your First WebGL Project With CurtainsJS - Four Part Setup', 'link': '/hr21don/setting-up-your-first-webgl-project-with-curtainsjs-four-part-setup-3l3m', 'description': 'Setting Up Your Firs
+   t WebGL Project With CurtainsJS - Four Part Setup'
+    }, 'dev-to_28': {'title': 'Cross Module Transaction with Prisma', 'src': 'Cross Module Transaction with Prisma', 'link': '/kenfdev/cross-module-transaction-w
+   ith-prisma-5d08', 'description': 'Cross Module Transaction with Prisma'
+    }, 'dev-to_29': {'title': 'New Free Developer Security Tool!', 'src': 'New Free Developer Security Tool!', 'link': '/codesec/new-free-de
+   veloper-security-tool-48a0', 'description': 'New Free Developer Security Tool!'
+    }, 'dev-to_30': {'title': '5 reasons you should use C++ for digital signal processing', 'src': '5 reasons you should use C++ for
+    digital signal processing', 'link': '/educative/5-reasons-you-should-use-c-for-digital-signal-processing-1n5p', 'description': '5 reasons you should use C++ for digital signal processing'
+    }, 'dev-to_31': {'t
+   itle': 'AWS Textract and React Native', 'src': 'AWS Textract and React Native', 'link': '/hadinasser24/aws-textract-and-react-native-m7j', 'description': 'AWS Textract and React Native'
+    }, 'dev-to_32': {'titl
+   e': 'One-Click Sign In with Next Auth', 'src': 'One-Click Sign In with Next Auth', 'link': '/gdbroman/one-click-sign-in-with-next-auth-27if', 'description': 'One-Click Sign In with Next Auth'
+    }, 'dev-to_33': {'title': 'Writing a Game in Typescript', 'src': 'Writing a Game in Typescript', 'link': '/iamschulz/writing-a-game-in-typescript-13em', 'description': 'Writing a Game in Typescript'
+    }, 'dev-to_34': {'title': "Common Ninja Platform News: Storage API ' Payment Trials ' Webhooks Management", 'src': "Common Ninja Platform News: Storage API ' Payment Trials ' Webhooks Management", 'link': '/commonninja/common-ninja-
+   platform-news-storage-api-payment-trials-webhooks-management-4ob1', 'description': "Common Ninja Platform News: Storage API ' Payment Trials ' Webhooks Management"
+    }, 'dev-to_35': {'title': 'Document Like You
+    Code', 'src': 'Document Like You Code', 'link': '/stoutsystems/document-like-you-code-1hdg', 'description': 'Document Like You Code'
+    }, 'dev-to_36': {'title': 'Should I have separate GitHub accounts for pers
+   onal and professional projects?', 'src': 'Should I have separate GitHub accounts for personal and professional projects?', 'link': '/sloan/should-i-have-separate-github-accounts-for-personal-and-professional
+   -projects-3icl', 'description': 'Should I have separate GitHub accounts for personal and professional projects?'
+    }, 'dev-to_37': {'title': 'How to Push an Empty Commit in Git', 'src': 'How to Push an Empty Co
+   mmit in Git', 'link': '/techielass/how-to-push-an-empty-commit-in-git-1i5m', 'description': 'How to Push an Empty Commit in Git'
+    }, 'dev-to_38': {'title': 'How to Reduce Time Spent on Refactoring? 3 Tips✅✅✅',
+    'src': 'How to Reduce Time Spent on Refactoring? 3 Tips✅✅✅', 'link': '/alexomeyer/how-to-reduce-time-spent-on-refactoring-3-tips-5gmm', 'description': 'How to Reduce Time Spent on Refactoring? 3 Tips✅✅✅'
+    }, 
+   'dev-to_39': {'title': 'Do You Create UML Diagrams For New Projects?', 'src': 'Do You Create UML Diagrams For New Projects?', 'link': '/moose_said/do-you-create-uml-diagrams-for-new-projects-29a8', 'descript
+   ion': 'Do You Create UML Diagrams For New Projects?'
+    }, 'dev-to_40': {'title': '20 chart.js Alternatives', 'src': '20 chart.js Alternatives', 'link': '/gil_finkelstein/20-chartjs-alternatives-45aj', 'descript
+   ion': '20 chart.js Alternatives'
+    }, 'dev-to_41': {'title': 'Node.js vs Rust performance for webservers', 'src': 'Node.js vs Rust performance for webservers', 'link': '/gfauchart/nodejs-vs-rust-performance-for
+   -webservers-3npg', 'description': 'Node.js vs Rust performance for webservers'
+    }, 'dev-to_42': {'title': 'Using Angular to create a Micro Frontend', 'src': 'Using Angular to create a Micro Frontend', 'link': 
+   '/entando/using-angular-to-create-a-micro-frontend-5fci', 'description': 'Using Angular to create a Micro Frontend'
+    }, 'dev-to_43': {'title': "Ukraine's Data Migration during war - AWS Snowball Devices", 'src
+   ': "Ukraine's Data Migration during war - AWS Snowball Devices", 'link': '/venkatesh111/ukraines-data-migration-during-war-aws-snowball-devices-3e4e', 'description': "Ukraine's Data Migration during war - AW
+   S Snowball Devices"}, 'dev-to_44': {'title': 'Responsiveness and Container-Queries', 'src': 'Responsiveness and Container-Queries', 'link': '/abboud/responsiveness-and-container-queries-3l12', 'description':
+    'Responsiveness and Container-Queries'
+    }, 'dev-to_45': {'title': "Let's Make a Top-Down Shooter Game in C# and Windows Forms 🤖", 'src': "Let's Make a Top-Down Shooter Game in C# and Windows Forms 🤖", 'link
+   ': '/christinecdev/lets-make-a-top-down-shooter-game-in-c-and-windows-forms-1a4h', 'description': "Let's Make a Top-Down Shooter Game in C# and Windows Forms 🤖"
+    }, 'dev-to_46': {'title': 'How you can bypass 
+   the captcha?', 'src': 'How you can bypass the captcha?', 'link': '/yourmdsarfaraj/how-you-can-bypass-the-captcha-l05', 'description': 'How you can bypass the captcha?'
+    }, 'dev-to_47': {'title': 'KNEX.JS SQL Q
+   uery builder for Nodejs', 'src': 'KNEX.JS SQL Query builder for Nodejs', 'link': '/taiworoqeeb/knexjs-sql-query-builder-for-nodejs-2728', 'description': 'KNEX.JS SQL Query builder for Nodejs'
+    }, 'dev-to_48': {'title': 'Optimizing Images for Web Performance with NGINX', 'src': 'Optimizing Images for Web Performance with NGINX', 'link': '/requestmetrics/optimizing-images-for-web-performance-with-nginx-2ba', 'descr
+   iption': 'Optimizing Images for Web Performance with NGINX'
+    }, 'dev-to_49': {'title': 'How many monitors do you use for coding?', 'src': 'How many monitors do you use for coding?', 'link': '/bagya/developers-
+   how-many-monitors-do-you-use-for-coding-54ag', 'description': 'How many monitors do you use for coding?'
     }
-]
+}

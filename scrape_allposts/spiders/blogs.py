@@ -4,6 +4,7 @@ from abc import ABC
 import scrapy
 
 from scrape_allposts.config.blogs_config import blogs_config
+from scrape_allposts.config.firestore_config import fire_config
 from scrape_allposts.helpers.ParseBlogs import ParseBlogs
 from scrapy_splash import SplashRequest, SplashTextResponse
 from scrapy.http import HtmlResponse
@@ -39,13 +40,9 @@ class BlogsSpider(scrapy.Spider, ParseBlogs, ABC):
                 'timeout': 120,
             }, meta={'post': post_obj, 'site_name': site_name})
 
-    def parse(self, response, **kwargs):
-        site_name = response.meta['site_name']
-        post: Post = response.meta['post']
+    def execute_parse(self, response, post):
         is_only_one_html = isinstance(response, SplashTextResponse)
         pages_response = response if is_only_one_html else response.data
-        filename = f'blogs-{site_name}.json'
-
         if not is_only_one_html:
             list_elements = []
 
@@ -53,13 +50,24 @@ class BlogsSpider(scrapy.Spider, ParseBlogs, ABC):
                 response_casted = HtmlResponse(url='scrapied', body=v, encoding='utf-8')
                 list_elements = [*self.get_elements(response_casted, post), *list_elements]
 
-            with open(filename, 'w', encoding='utf-8') as f:
-                json.dump(list_elements, f)
+            return list_elements
         else:
             response_casted = HtmlResponse(url='scrapied', body=pages_response.body, encoding='utf-8')
-            list_elements_only = self.get_elements(response_casted, post)
+            return self.get_elements(response_casted, post)
 
-            with open(filename, 'w', encoding='utf-8') as f:
-                json.dump(list_elements_only, f)
+    def parse(self, response, **kwargs):
+        site_name = response.meta['site_name']
+        post: Post = response.meta['post']
 
-        self.log(f'Saved file as {filename}')
+        elements = self.execute_parse(response, post)
+
+        element_map_to_save = {}
+
+        for i, element in enumerate(elements):
+            element_map_to_save[f'{site_name}_{i}'] = element
+
+        try:
+            site_ref = fire_config.firebase_db.reference(site_name)
+            site_ref.set(element_map_to_save)
+        except:
+            fire_config.firebase_ref.push(site_name, element_map_to_save)
