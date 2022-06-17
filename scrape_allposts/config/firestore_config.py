@@ -16,21 +16,30 @@ class FirestoreConfig(metaclass=SingletonMeta):
             'databaseURL': "https://gamiblog-scraper-default-rtdb.firebaseio.com"
         })
 
-        _firebase_db = db
-        _firebase_ref = db.reference()
-        _firestore_client = firestore.client()
+        self.firebase_db = db
+        self.firebase_ref = db.reference()
+        self.firestore_client = firestore.client()
 
     @property
     def firebase_db(self):
         return self._firebase_db
 
+    @firebase_db.setter
+    def firebase_db(self, firebase_db):
+        self._firebase_db = firebase_db
+
     @property
     def firebase_ref(self):
         return self._firebase_ref
+
+    @firebase_ref.setter
+    def firebase_ref(self, firebase_ref):
+        self._firebase_ref = firebase_ref
 
     @property
     def firestore_client(self):
         return self._firestore_client
 
-
-fire_config = FirestoreConfig()
+    @firestore_client.setter
+    def firestore_client(self, firestore_client):
+        self._firestore_client = firestore_client

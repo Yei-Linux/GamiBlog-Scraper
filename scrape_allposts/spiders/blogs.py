@@ -4,7 +4,6 @@ from abc import ABC
 import scrapy
 
 from scrape_allposts.config.blogs_config import blogs_config
-from scrape_allposts.config.firestore_config import fire_config
 from scrape_allposts.helpers.ParseBlogs import ParseBlogs
 from scrapy_splash import SplashRequest, SplashTextResponse
 from scrapy.http import HtmlResponse
@@ -61,13 +60,6 @@ class BlogsSpider(scrapy.Spider, ParseBlogs, ABC):
 
         elements = self.execute_parse(response, post)
 
-        element_map_to_save = {}
+        return {"elements": elements, "site_name": site_name}
 
-        for i, element in enumerate(elements):
-            element_map_to_save[f'{site_name}_{i}'] = element
 
-        try:
-            site_ref = fire_config.firebase_db.reference(site_name)
-            site_ref.set(element_map_to_save)
-        except:
-            fire_config.firebase_ref.push(site_name, element_map_to_save)
